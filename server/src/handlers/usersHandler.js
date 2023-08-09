@@ -1,6 +1,5 @@
 const { allUsers, createUser, findUserName, getUserId, updateUser } = require('../controllers/userController')
-// const WelcomeEmail = require('../nodemailer/userNodemailer')
-// const useNodemailer = require('../nodemailer/userNodemailer')
+const WelcomeEmail = require('../nodemailer/userNodemailer');
 
 const getUsersHandler = async (req, res) => {
 
@@ -20,8 +19,8 @@ const createUsersHandler = async (req, res) => {
     try {
 
         const newUser = await createUser(username, name, lastName, email, password, cellPhone, country)
-        // const userEmail = newUser.email
-        // await WelcomeEmail(userEmail)
+        const userEmail = newUser.email
+        await WelcomeEmail(userEmail)
 
         res.status(200).json(newUser)
     } catch (error) {
