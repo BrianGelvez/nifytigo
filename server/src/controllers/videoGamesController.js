@@ -36,4 +36,17 @@ const allVideoGames = async () => {
   const allData = [...dataGames]
   return allData;
 }
-module.exports =  {allVideoGames}
+const idGames = async (id) =>{
+  const URL = `https://api.rawg.io/api/games/${id}?key=1e1c4aa3bafb415f8abf00ca9789af7f&page_size=40`;
+  const response = await axios.get(URL);
+  const data = response.data;
+  return {
+    id: data.id,
+    name: data.name,
+    description: data.description,
+    platforms: data.platforms,
+    image: data.background_image,
+  }
+}
+
+module.exports =  {allVideoGames, idGames}

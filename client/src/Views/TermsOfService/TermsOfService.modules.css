@@ -1,0 +1,120 @@
+/* Estilos para .privacy-policy */
+.termofservice {
+    display: inline-block;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  
+  /* Estilos para .card-service */
+  .card-service {
+    margin-top: 2%;
+    margin-right: 40px;
+    background: #2cb5a0;
+    height: fit-content;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 4px solid #7cdacc;
+    box-shadow: 0 6px 10px rgba(207, 212, 222, 1);
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.3s ease;
+  }
+  
+  /* Estilos para .cardconditions */
+  .cardconditions {
+    flex: 1;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 10px;
+    background: #2cb5a0;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 4px solid #7cdacc;
+    box-shadow: 0 6px 10px rgba(207, 212, 222, 1);
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.3s ease;
+  }
+  
+  /* Estilos para .div */
+  .div {
+    margin: 1%;
+    display: flex;
+  }
+  
+  /* Estilos para .ache2 */
+  .ache2-2 {
+    font-size: 21px;
+    width: 80%;
+    margin-top: 2%;
+    margin: 0 auto;
+    margin-bottom: 3%;
+  }
+  
+  .ache1-1 {
+    font-size: 50px;
+  }
+  
+  .buttonbackTermsOfService {
+    background-color: black;
+    width: 30%;
+  }
+  
+  ul {
+    list-style: none;
+    counter-reset: item;
+    padding-left: 0;
+  }
+  
+  ul li {
+    counter-increment: item;
+    margin-left: 30px;
+    position: relative;
+  }
+  
+  ul li::before {
+    content: "\2022";
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffffff;
+    position: absolute;
+    left: -30px;
+  }
+  
+  /* Media queries para diferentes tamaños de pantalla */
+  @media (max-width: 1024px) {
+    .card-service {
+      width: 40%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .termofservice {
+      flex-direction: column;
+    }
+    
+    .card-service {
+      width: 70%;
+      margin-right: 0;
+    }
+  
+    .cardconditions {
+      margin-left: 0;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .card-service {
+      width: 100%;
+    }
+  }
+  

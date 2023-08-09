@@ -1,0 +1,108 @@
+
+
+/* Estilos para .privacy-policy */
+.privacy-policy {
+<<<<<<< HEAD
+    display: inline-block;
+    margin-left: 2%;
+    margin-right: 2%;
+=======
+    display: flex;
+    margin: 3rem;
+>>>>>>> ddf6555a7edc71c98909e59ec800817363977b78
+  }
+  
+  /* Estilos para .Card-policy */
+  .Card-policy {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 40px; /* Ajustar el margen derecho para separar los elementos */
+    background: #2cb5a0;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 4px solid #7cdacc;
+    box-shadow: 0 6px 10px rgba(207, 212, 222, 1);
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.3s ease;
+  }
+  
+  /* Estilos para .CardInfo */
+  .CardInfo {
+    flex: 1; /* Ocupar todo el espacio disponible */
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 10px; /* Ajustar el margen izquierdo para separar los elementos */
+    background: #2cb5a0;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 4px solid #7cdacc;
+    box-shadow: 0 6px 10px rgba(207, 212, 222, 1);
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.3s ease;
+  }
+  
+  /* Estilos para .ache2 */
+  .ache2 {
+    font-size: 21px;
+    width: 60%;
+    margin: 0 auto;
+    margin-bottom: 3%;
+  }
+  
+  .ache1 {
+    font-size: 50px;
+  }
+
+  .buttonbackPrivacy {
+        background-color: black;
+    width: 30%;
+  }
+  
+  ol {
+    list-style: none; /* Eliminar los números predeterminados */
+    counter-reset: item; /* Reiniciar el contador */
+  }
+  
+  ol li {
+    counter-increment: item; /* Incrementar el contador en 1 por cada elemento li */
+    margin-left: 30px; /* Agregar margen izquierdo para separar los números del borde del div */
+  }
+  
+  ol li::marker {
+    content: counter(item) ". "; /* Mostrar el número del contador seguido de un punto */
+    font-size: 22px; /* Tamaño de fuente para los números */
+    font-weight: bold; /* Peso de fuente para los números */
+    color: #ffffff; /* Color de los números */
+  }
+
+
+  @media (max-width: 768px) {
+    .privacy-policy {
+      flex-direction: column; /* Cambiar a diseño de columna en pantallas pequeñas */
+    }
+    
+    .Card-policy {
+      width: 100%; /* Ocupar todo el ancho en pantallas pequeñas */
+      margin-right: 0; /* Eliminar margen derecho en pantallas pequeñas */
+      margin-bottom: 20px; /* Añadir margen inferior en pantallas pequeñas */
+    }
+  
+    .CardInfo {
+      margin-left: 0; /* Eliminar margen izquierdo en pantallas pequeñas */
+    }
+  
+    ol li {
+      margin-left: 20px; /* Ajustar margen izquierdo en pantallas pequeñas */
+    }
+  }

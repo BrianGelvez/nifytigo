@@ -1,0 +1,44 @@
+
+.component {
+    margin: 2% 5%; /* Añadir margen alrededor del componente */
+    color: #000;
+  }
+
+  .title1 {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 30px; /* Añadir margen inferior para separar el título de los bubbles */
+  }
+
+  .conteinerbubbles {
+    display: flex;
+
+  }
+  
+  .bubble {
+    width: 85%; /* Reducir el ancho para que quepan dos bubbles en una fila */
+    margin: 20px; /* Agregar margen entre los bubbles */
+    background: #2cb5a0;
+    clip-path: polygon(30px 0%, 100% 0, 100% calc(100% - 30px), calc(100% - 30px) 100%, 0 100%, 0% 30px);
+    border-top-right-radius: 20px;
+    transition: 1s ease-in-out;
+    border-radius: 9px;
+    padding: 20px; /* Añadir espacio interno para el contenido */
+  }
+  
+  .text {
+    font-size: 20px;
+    color: #fff;
+    margin: 0; /* Eliminar margen predeterminado del párrafo */
+  }
+  
+  .ask {
+    display: flex;
+    margin-left: 3%;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .buttonbackTermsOfService {
+    margin-top: 5%;
+  }

@@ -6,11 +6,14 @@ module.exports = (sequelize) => {
             type: DataTypes.UUID, // genera un id mas largo, ocupa mas espacio en la BDD pero es mas seguro, sin colisiones
             defaultValue: DataTypes.UUIDV4, // Genera automáticamente un UUID único
             primaryKey: true,
-            allowNull: false,
+            unique: true
         },
-
+        username: { 
+            type: DataTypes.STRING,
+            allowNull: false,
+            unique: true
+        },
         name: { 
-
             type: DataTypes.STRING,
             allowNull: false,
         },

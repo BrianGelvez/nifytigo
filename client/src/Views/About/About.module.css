@@ -1,0 +1,141 @@
+.containerAbout {
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0%;
+    padding: 0%;
+   /* display: flex;*/
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    /*background: linear-gradient(180deg, #242424 0%, #e0d9d9d7 100%);*/
+    margin-top: 3rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: grid;
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+.eachContainer {
+    grid-column: 1 / span 3; /* Los elementos dentro de eachContainer ocupan tres columnas */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Cada elemento dentro de eachContainer ocupa una columna */
+    gap: 20px; /* Espacio entre los elementos dentro de eachContainer */
+    margin-top: 3rem;
+    margin-left: 45rem;
+    margin-right: 50rem;
+    margin-top: 0;
+    padding: 0;
+  }
+  
+  .containerAboutUs {
+    grid-column: 1; /* ContainerAboutUs estará en la primera columna */
+    grid-row: 1; /* ContainerAboutUs estará en la primera fila */
+    margin-left: 15rem;
+  }
+  
+  .containerMission {
+    grid-column: 3; /* ContainerMission estará en la tercera columna */
+    grid-row: 1; /* ContainerMission estará en la segunda fila */
+
+    margin-top: 7rem;
+    margin-right:12rem;
+  }
+  
+  .containerVision {
+    grid-column: 2; /* ContainerVision estará en la segunda columna */
+    grid-row: 2; /* ContainerVision estará en la segunda fila */
+    margin-right: 2rem;
+    margin-bottom: 5rem;
+  }
+.containerAboutUs,
+.containerMission,
+.containerVision {
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-out;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    transform-style: preserve-3d;
+    background: radial-gradient(circle, #dfd6df, #e79639e7,#ad5a22,#4e301c);
+}
+
+.containerAboutUs h3,
+.containerMission h3,
+.containerVision h3 {
+    opacity: 1;
+    font-size:20px;
+    color:black;
+}
+
+.containerAboutUs h2,
+.containerMission h2,
+.containerVision h2 {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    margin: 2rem;
+    padding: 10px;
+    z-index: 1;
+    opacity: 1;
+    transition: opacity 0.3s;
+    font-size: 52px;
+    color: #232323;
+    font-family:monospace;
+}
+
+.containerAboutUs:hover h2,
+.containerMission:hover h2,
+.containerVision:hover h2 {
+    opacity: 0;
+}
+
+.containerAboutUsInner,
+.containerMissionInner,
+.containerVisionInner {
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+    transition: transform 0.6s, opacity 0.3s;
+    transform: rotateY(0deg);
+    opacity: 1;
+    z-index: 0;
+    padding: 4rem;
+    padding-right: 2.5rem;
+}
+
+.containerAboutUsInner h3,
+.containerMissionInner h3,
+.containerVisionInner h3 {
+    transform: rotateY(180deg);
+    opacity: 0;
+}
+
+.containerAboutUs:hover .containerAboutUsInner,
+.containerMission:hover .containerMissionInner,
+.containerVision:hover .containerVisionInner {
+    transform: rotateY(180deg);
+    opacity: 1;
+}
+
+.containerAboutUs:hover,
+.containerMission:hover,
+.containerVision:hover {
+    transform: translateY(-5px);
+}
+
+.containerAboutUs:hover .containerAboutUsInner h3,
+.containerMission:hover .containerMissionInner h3,
+.containerVision:hover .containerVisionInner h3 {
+    opacity: 1;
+}

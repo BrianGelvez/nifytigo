@@ -11,8 +11,11 @@ function Cards(ejemplo) {
             key={ejemplo.id}
             id={ejemplo.id}
             name={ejemplo.name}
-            image={ejemplo.image}
             description={ejemplo.description}
+            image={ejemplo.image}
+            price={ejemplo.price}
+            user={ejemplo.user}
+            categories={ejemplo.categories}
           />
     </div>
   );

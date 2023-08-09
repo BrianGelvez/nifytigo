@@ -7,35 +7,28 @@
 .img {
   width: 12rem;
   height: 12rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
 
 .follow{
 color: #ff8c09da;
 }
-
-
-.mainConatiner {
-  position: relative;
-  width: 100%;
-  height: 17rem;
-  border-top: 1px solid #ffb109;
-  background-color: #242424;
+.footer h4{
+  margin-bottom: 2rem;
 }
-
 .content {
-  position: absolute;
   display: grid;
   grid-template: 1fr / 30% 40% 30%;
   right: 2%;
   gap: 1rem;
   flex-direction: row-reverse;
-  width: 100%;
-  height: 100%;
-  bottom: 0;
+position: absolute;
   background-color: #242424;
   align-items: center;
   justify-content: center;
+  left: 0%;
+  right: 0%;
 }
 
 .column {
@@ -55,7 +48,7 @@ color: #ff8c09da;
   transform: scale(1.2);
 }
 
-.conocenos {
+.title {
   text-decoration: none;
   opacity: 0.8;
   color: #fff;
@@ -66,7 +59,7 @@ color: #ff8c09da;
   margin-bottom: 0.5rem;
 }
 
-.conocenos:hover {
+.title:hover {
   opacity: 3;
 }
 
@@ -106,7 +99,7 @@ a:active {
   display: flex;
   flex-direction: row;
   margin-top: 1rem;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .boxNames {
@@ -119,11 +112,12 @@ a:active {
 }
 
 .boxLogo {
+  flex-direction: column;
   grid-area: 1 / 1 / 2 / 2;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 5rem;
+  padding-left: 1em;
 }
 
 .gridContainer {
@@ -189,7 +183,7 @@ a:active {
     position: relative;
     width: 100%;
     height: auto;
-    flex-direction: column;
+    flex-direction: column;    
   }
 
   .content {
@@ -198,7 +192,7 @@ a:active {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 0;
+    gap: 1rem;
     padding: 0;
     margin-left: 0;
     text-align: center;
@@ -228,7 +222,7 @@ a:active {
     width: 100%;
   }
 
-  .conocenos {
+  .title {
     margin-bottom: 0.1rem;
 
   }

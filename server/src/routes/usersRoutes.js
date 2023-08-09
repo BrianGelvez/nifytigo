@@ -4,11 +4,18 @@ const router = Router();
 
 const {
     getUsersHandler,
-    getCreateUsers
+    createUsersHandler,
+    getUserNameHandler,
+    getUserIdHandler,
+    updateUserHandler
 }= require('../handlers/usersHandler')
 
 
-router.get('/', getUsersHandler)
-router.post('/', getCreateUsers)
+router
+.get('/all', getUsersHandler)
+.get('/username', getUserNameHandler)
+.get('/:id', getUserIdHandler)
+.post('/', createUsersHandler)
+.put('/update/:id', updateUserHandler)
 
 module.exports = router;

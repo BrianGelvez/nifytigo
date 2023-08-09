@@ -1,6 +1,13 @@
 import React from 'react';
 import './AboutPro.css'
+// import Jose from '../../img/Jose.jpg'
 import Alejandro from '../../img/Alejandro.jpg'
+import Bryan from '../../img/Bryan.jpg'
+import Rodrigo from '../../img/Rodrigo.jpg'
+import Julian from '../../img/Julian.jpg'
+// import Brandon from '../../img/Brandon.jpg'
+import Brian from '../../img/Brian.jpg'
+import Leidy from '../../img/Leidy.jpg'
 
 const GoogleButton = () => {
 
@@ -13,7 +20,7 @@ const GoogleButton = () => {
         { icon: 'linkedin', tooltip: 'LinkedIn', link: '#' },
         { icon: 'github', tooltip: 'Github', link: '#'},
       ],
-      imageUrl: Alejandro
+      // imageUrl: Jose
     },
     {
         name: 'Alejandro Prieto',
@@ -21,69 +28,69 @@ const GoogleButton = () => {
         socialMedia: [
           { icon: 'twitter', tooltip: 'Twitter', link: '#' },
           { icon: 'linkedin', tooltip: 'LinkedIn', link: 'https://www.linkedin.com/in/luis-alejandro-prieto-torres-992600261/' },
-          { icon: 'github', tooltip: 'Github', link: '#'},
+          { icon: 'github', tooltip: 'Github', link: 'https://github.com/DETNAW11'},
         ],
         imageUrl: Alejandro
       },
       {
-        name: 'Jose Franco',
+        name: 'Bryan Coaquila',
+        role: 'Programador Full Stack',
+        socialMedia: [
+          { icon: 'twitter', tooltip: 'Twitter', link: '#' },
+          { icon: 'linkedin', tooltip: 'LinkedIn', link: 'https://www.linkedin.com/in/bryan-fausto-coaguila-torres-ab9365181/ ' },
+          { icon: 'github', tooltip: 'Github', link: 'https://github.com/bryan201429'},
+        ],
+        imageUrl: Bryan
+      },
+      {
+        name: 'Rodrigo Amaya',
+        role: 'Programador Full Stack',
+        socialMedia: [
+          { icon: 'twitter', tooltip: 'Twitter', link: '#' },
+          { icon: 'linkedin', tooltip: 'LinkedIn', link: 'https://www.linkedin.com/in/rodrigo-augusto-amaya-9a04161b5' },
+          { icon: 'github', tooltip: 'Github', link: '#'},
+        ],
+        imageUrl: Rodrigo
+      },
+      {
+        name: 'Julian Tejeda',
+        role: 'Programador Full Stack',
+        socialMedia: [
+          { icon: 'twitter', tooltip: 'Twitter', link: '#' },
+          { icon: 'linkedin', tooltip: 'LinkedIn', link: 'https://www.linkedin.com/in/julian-tejada-079325198' },
+          { icon: 'github', tooltip: 'Github', link: 'https://github.com/TomateComunista'},
+        ],
+        imageUrl: Julian
+      },
+      {
+        name: 'Brandon Barrera',
         role: 'Programador Full Stack',
         socialMedia: [
           { icon: 'twitter', tooltip: 'Twitter', link: '#' },
           { icon: 'linkedin', tooltip: 'LinkedIn', link: '#' },
           { icon: 'github', tooltip: 'Github', link: '#'},
         ],
-        imageUrl: Alejandro
+        // imageUrl: Brandon
       },
       {
-        name: 'Jose Franco',
+        name: 'Brian Gelvez',
+        role: 'Programador Full Stack',
+        socialMedia: [
+          { icon: 'instagram', tooltip: 'instagram', link: 'https://www.instagram.com/brian.gelvez/' },
+          { icon: 'linkedin', tooltip: 'LinkedIn', link: 'https://www.linkedin.com/in/briangelvez97/' },
+          { icon: 'github', tooltip: 'Github', link: '#'},
+        ],
+        imageUrl: Brian
+      },
+      {
+        name: 'leidy Sánchez',
         role: 'Programador Full Stack',
         socialMedia: [
           { icon: 'twitter', tooltip: 'Twitter', link: '#' },
-          { icon: 'linkedin', tooltip: 'LinkedIn', link: '#' },
+          { icon: 'linkedin', tooltip: 'LinkedIn', link: 'https://www.linkedin.com/in/leidy-johanna-s%C3%A1nchez-zamora-9370731a3/' },
           { icon: 'github', tooltip: 'Github', link: '#'},
         ],
-        imageUrl: Alejandro
-      },
-      {
-        name: 'Jose Franco',
-        role: 'Programador Full Stack',
-        socialMedia: [
-          { icon: 'twitter', tooltip: 'Twitter', link: '#' },
-          { icon: 'linkedin', tooltip: 'LinkedIn', link: '#' },
-          { icon: 'github', tooltip: 'Github', link: '#'},
-        ],
-        imageUrl: Alejandro
-      },
-      {
-        name: 'Jose Franco',
-        role: 'Programador Full Stack',
-        socialMedia: [
-          { icon: 'twitter', tooltip: 'Twitter', link: '#' },
-          { icon: 'linkedin', tooltip: 'LinkedIn', link: '#' },
-          { icon: 'github', tooltip: 'Github', link: '#'},
-        ],
-        imageUrl: Alejandro
-      },
-      {
-        name: 'Jose Franco',
-        role: 'Programador Full Stack',
-        socialMedia: [
-          { icon: 'twitter', tooltip: 'Twitter', link: '#' },
-          { icon: 'linkedin', tooltip: 'LinkedIn', link: '#' },
-          { icon: 'github', tooltip: 'Github', link: '#'},
-        ],
-        imageUrl: Alejandro
-      },
-      {
-        name: 'Jose Franco',
-        role: 'Programador Full Stack',
-        socialMedia: [
-          { icon: 'twitter', tooltip: 'Twitter', link: '#' },
-          { icon: 'linkedin', tooltip: 'LinkedIn', link: '#' },
-          { icon: 'github', tooltip: 'Github', link: '#'},
-        ],
-        imageUrl: Alejandro
+        imageUrl: Leidy
       },
   ];
 
@@ -118,7 +125,7 @@ const GoogleButton = () => {
       };
 
       return (
-        <div>
+        <div className='AboutProContainer'>
         <h1 className='titulo'>About Programmers</h1>
         <h2 className='subtitulo'>This is our great team of programmers, thanks for your passion and dedication, this project has been successfully consolidated.</h2>
         <div className='card-container'>

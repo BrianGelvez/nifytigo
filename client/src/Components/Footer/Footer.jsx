@@ -8,30 +8,30 @@ const Footer = () => {
     window.scrollTo(0, 0);
   }
   return (
-    <div className={style.mainConatiner}>
+
       <div className={style.content}>
         <div className={style.boxLogo}>
           <img src={logo} alt="logo" className={style.img} />
-          <h4>© 2023 NifytiGo</h4>
+          <h4 className={style.h4}>© 2023 NifytiGo</h4>
         </div>
         <div className={style.boxNames}>
           <div className={style.gridContainer}>
             <div className={style.column}>
-              <h3 className={style.conocenos}>Links of interest</h3>
-              <NavLink to='/Home' className={style.navlink} onClick={goToTopPage}>Home</NavLink>
+              <h3 className={style.title}>Links of interest</h3>
+              <NavLink to='/' className={style.navlink} onClick={goToTopPage}>Home</NavLink>
               <NavLink to='/Login' className={style.navlink} onClick={goToTopPage}>Log in</NavLink>
-              <NavLink to='/Contact' className={style.navlink} onClick={goToTopPage}>Contact us</NavLink>
+              {/*<NavLink to='/Contact' className={style.navlink} onClick={goToTopPage}>Contact us</NavLink>*/}
 
 
             </div>
             <div className={style.column}>
-              <h3 className={style.conocenos}>Our company</h3>
+              <h3 className={style.title}>Our company</h3>
               <NavLink to='/About' className={style.navlink} onClick={goToTopPage}>About</NavLink>
               <NavLink to='/TermsOfService' className={style.navlink} onClick={goToTopPage}>Terms of use</NavLink>
               <NavLink to='/PrivacyOfPolicy' className={style.navlink} onClick={goToTopPage}>Privacy of policy</NavLink>
             </div>
             <div className={style.column}>
-              <h3 className={style.conocenos}>About us</h3>
+              <h3 className={style.title}>About us</h3>
               <NavLink to='/AboutProgrammers' className={style.navlink} onClick={goToTopPage}>Developers</NavLink>
               <NavLink to='/FrequentQuestions' className={style.navlink} onClick={goToTopPage}>FAQ</NavLink>
             </div>
@@ -111,7 +111,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+   
   );
 };
 
