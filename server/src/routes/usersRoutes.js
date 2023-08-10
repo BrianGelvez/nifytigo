@@ -14,6 +14,7 @@ const {
 router
 .get('/all', getUsersHandler)
 .get('/username', getUserNameHandler)
+.post('./username', getUserNameHandler)
 .get('/:id', getUserIdHandler)
 .post('/', createUsersHandler)
 .put('/update/:id', updateUserHandler)

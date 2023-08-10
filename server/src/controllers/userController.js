@@ -17,7 +17,6 @@ const getUserId = async (id) => {
 }
 
 const findUserName = async (username, password) => {
-
     const exist = await users.findOne({ where: { username: username } });
     if (exist) {
         if(exist.password === password) {

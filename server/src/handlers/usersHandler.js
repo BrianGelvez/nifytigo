@@ -29,21 +29,23 @@ const createUsersHandler = async (req, res) => {
 }
 
 const getUserNameHandler = async (req, res) => {
-
-    const { username, password } = req.body
+    const { username, password } = req.method === 'GET' ? req.query : req.body;
+  
     try {
-
-        const UserName = await findUserName(username, password)
-        res.status(200).json(UserName)
-
+      const isAuthenticated = await findUserName(username, password);
+  
+      if (isAuthenticated) {
+        res.status(200).json({ authenticated: true });
+      } else {
+        res.status(401).json({ authenticated: false });
+      }
     } catch (error) {
-        res.status(400).json({ error: error })
+      res.status(401).json({ authenticated: false, error: error.message });
     }
-}
+  };
 
 const getUserIdHandler = async (req, res) => {
     const { id } = req.params
-    console.log(id);
     try {
         const user = await getUserId(id);
         if (user) {
@@ -58,8 +60,8 @@ const getUserIdHandler = async (req, res) => {
 
 const updateUserHandler = async (req, res) => {
     try {
-    const { id } = req.params
-    const { username, name, lastName, email, password, cellPhone, country } = req.body
+        const { id } = req.params
+        const { username, name, lastName, email, password, cellPhone, country } = req.body
         const user = await updateUser(id, username, name, lastName, email, password, cellPhone, country);
         return res.status(200).json(user)
     } catch (error) {
