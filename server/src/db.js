@@ -4,14 +4,14 @@ const { Sequelize } = require("sequelize");
 const fs = require('fs');
 const path = require('path');
 const {
-  DB_USER, DB_PASSWORD, DB_HOST, DB_NAME, INTERNAL_DATABASE } = process.env;
+  DB_USER, DB_PASSWORD, DB_HOST, DB_NAME, EXTERNAL_DATABASE } = process.env;
 
 // const sequelize = new Sequelize(`postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/${DB_NAME}`, {
 //   logging: false, 
 //   native: false, 
 // });
 
-const sequelize = new Sequelize(INTERNAL_DATABASE, { // Cambio de cadena de conexión
+const sequelize = new Sequelize(EXTERNAL_DATABASE, { // Cambio de cadena de conexión
   logging: false, 
   native: false, 
 });
